@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 70px;
+  background-color: #ec715f;
+}
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 70px;
+}
+
+nav {
+  color: #fff;
+  display: flex;
+  justify-content: end;
+  float: right;
+}
+
+nav li {
+  font-size: 16px;
+  margin: 0 30px;
+  line-height: 70px;
+  list-style: none;
+}
+
+.main-vidual {
+  background-image: url(img/mv.png);
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  font-size: 64px;
+  padding: 200px 0 10px;
+}
+
+.main-vidual-text {
+  font-size: 20px;
+}
