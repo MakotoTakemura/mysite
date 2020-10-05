@@ -9,7 +9,11 @@ header {
   background-color: #ec715f;
 }
 
-.container {
+.menu {
+  display: none;
+}
+
+.header-container {
   width: 1024px;
   margin: 0 auto;
 }
@@ -35,10 +39,19 @@ nav li {
 .main-vidual {
   background-image: url(img/mv.png);
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 650px;
   text-align: center;
   color: #fff;
+}
+
+.main-vidual-container {
+  height: 650px;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -54,6 +67,7 @@ h1 {
 .portfolio {
   background-color: #eceff1;
   padding: 90px 0;
+  width: 100%;
 }
 
 .portfolio-container {
@@ -185,6 +199,7 @@ h2:before {
 .face {
   width: 512px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .face > img {
@@ -283,4 +298,123 @@ footer p {
   font-size: 16px;
   color: #fafafa;
   line-height: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    height: 50px;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+
+  .logo {
+    height: 50px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    border: solid 1.5px #fff;
+    margin: 5px 0;
+    float: right;
+  }
+
+  .main-vidual {
+    height: 650px;
+    color: #fafafa;
+    background-image: url(img/code.png);
+  }
+
+  .main-vidual-container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 200px 0 0 0;
+  }
+
+  .main-vidual-text {
+    font-size: 18px;
+    margin: 10px 0 0;
+  }
+
+  .portfolio-container {
+    width: 90%;
+  }
+
+  .clearfix > div:nth-child(odd) {
+    display: none;
+  }
+
+  .clearfix > div {
+    margin: 0 auto 10px;
+    float: none;
+  }
+
+  .port6 {
+    margin-bottom: 0;
+  }
+
+  .feature-container {
+    width: 90%;
+  }
+
+  .strength > div {
+    width: 100%;
+    float: none;
+    margin-bottom: 10px;
+  }
+
+  .strength > div:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-container {
+    width: 90%;
+  }
+
+  .profile-contents > div {
+    float: none;
+  }
+
+  .face {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .profile-text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .contact-container {
+    width: 90%;
+  }
+
+  .contact-contents > div {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .contact-right {
+    margin-top: 20px;
+  }
+
+  .sns,
+  .address {
+    text-align: center;
+  }
+
+  .sns i {
+    margin-right: 8px;
+  }
 }
